@@ -1,0 +1,51 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -d",
+    "start": "webpack -d -w",
+    "watch": "webpack --watch --progress",
+    "release": "webpack -p"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 Chrome versions",
+              "last 2 Firefox versions",
+              "last 2 Safari versions",
+              "last 2 Edge versions",
+              "ie 11",
+              "last 2 ChromeAndroid versions",
+              "last 2 iOS versions"
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "gsap": "^1.20.3",
+    "imagesloaded": "^4.1.4",
+    "jquery": "^3.2.1",
+    "spin": "0.0.1",
+    "youtube-iframe": "^1.0.3",
+    "youtube-player": "^5.4.0",
+    "yt-player": "^2.5.2"
+  }
+}
